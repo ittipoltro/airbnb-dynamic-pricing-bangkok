@@ -1,6 +1,3 @@
-# airbnb-dynamic-pricing-bangkok
-End-to-end Machine Learning pipeline to recommend optimal nightly rates for Airbnb listings in Bangkok. Uses market-based signals and Random Forest regression to maximize host revenue.
-
 # Airbnb Price Recommender (Bangkok) — Revenue-aware Pricing for Hosts
 
 A data science project that recommends an evidence-based nightly price for Bangkok Airbnb listings to help hosts avoid over/under-pricing and improve expected revenue.
@@ -88,12 +85,6 @@ To avoid unrealistic recommendations:
 
 ---
 
-## How to Run
-### 1) Setup
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
 
 ## Team Project — My Role
 This is a 3-person team project.
