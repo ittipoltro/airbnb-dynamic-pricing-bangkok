@@ -5,10 +5,6 @@ A data science project that recommends an evidence-based nightly price for Bangk
 **Problem:** Hosts often price by guesswork (copy competitors / ad-hoc rules) which can reduce bookings or cause revenue leakage.  
 **Solution:** Train a model on Inside Airbnb data + context-aware feature engineering (capacity-normalized amenities, review activity, and location signals) and evaluate not only prediction error but also **Expected Total Revenue**.
 
-## Demo
-- Streamlit App: <your-link>
-- Slides: `docs/Pair#3-Final Present.pdf`
-
 ---
 
 ## Business Context (Short-term rental & revenue)
