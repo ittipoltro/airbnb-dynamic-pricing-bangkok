@@ -73,20 +73,9 @@ To avoid unrealistic recommendations:
 
 ---
 
-## Repository Structure
-- `src/` reusable pipeline code (data prep → features → train → eval)
-- `notebooks/` deep dives (EDA, modeling)
-- `app/` Streamlit UI
-- `models/` trained model artifact (`price_model.joblib`)
-
----
-
-
 ## Team Project — My Role
-This is a 3-person team project.
+This is a 4-person team project.
 
 **My contributions:**
-- Designed the feature engineering pipeline (capacity-normalized amenities, log transforms).
-- Built the training & evaluation workflow (RMSE/MAPE + revenue-oriented metric).
+- Contributed on designing the feature engineering (capacity-normalized amenities, log transforms).
 - Implemented the baseline comparisons and validation checks (peer comparison / market band).
-- Packaged the trained model artifact and supported Streamlit deployment.
