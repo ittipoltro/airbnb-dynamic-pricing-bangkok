@@ -1,1 +1,9 @@
+# Ignore data files
+data/
+*.csv
+*.csv.gz
+*.parquet
 
+# Ignore system files
+.DS_Store
+.ipynb_checkpoints/
