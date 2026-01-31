@@ -21,7 +21,6 @@ Source: **Inside Airbnb** (Bangkok).
 We use 3 main tables:
 - `listings.csv` (property attributes)
 - `calendar.csv` (availability / pricing by date)
-- `reviews.csv` (review activity)
 
 Train/Test split uses **two recent snapshots** (e.g., June 2025 as train, Sept 2025 as test) to simulate real-world generalization over time.
 
