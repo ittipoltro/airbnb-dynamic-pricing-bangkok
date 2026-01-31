@@ -70,8 +70,8 @@ To avoid unrealistic recommendations:
 - Market resistance check using a log-normal price band
 - Remove “zombie” listings to ensure recommendations are realistically bookable
 
-![Alt text for the image](images/Result)
-![Alt text for the image](images/Similar Listing)
+![Alt text for the image](images/Result.png)
+![Alt text for the image](images/Similar Listing.png)
 
 ---
 
