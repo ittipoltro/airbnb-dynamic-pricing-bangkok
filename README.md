@@ -7,7 +7,7 @@ A data science project that recommends an evidence-based nightly price for Bangk
 
 ---
 
-## Business Context (Short-term rental & revenue)
+## Business Context
 Hosts need a price that balances:
 - Too high → guests hesitate → lower bookings
 - Too low → revenue leakage (RevPAN underperforms market potential)
@@ -18,7 +18,7 @@ This project focuses on pricing decisions aligned with real host outcomes rather
 
 ## Data
 Source: **Inside Airbnb** (Bangkok).  
-We use 3 main tables:
+We use 2 main tables:
 - `listings.csv` (property attributes)
 - `calendar.csv` (availability / pricing by date)
 
@@ -29,7 +29,7 @@ Train/Test split uses **two recent snapshots** (e.g., June 2025 as train, Sept 2
 ---
 
 ## Feature Engineering (Airbnb-aware)
-Key idea: encode what guests pay for in short-term rentals:
+Key idea: encode what guests pay for:
 - **Capacity-normalized quality**: beds/bedrooms/bathrooms/amenities per guest (fair comparison across listing sizes)
 - **Amenity richness**: amenities_count and log scaling for diminishing returns
 - **Listing activeness proxy**: log(number_of_reviews) — indicates “active” supply, not necessarily high price
@@ -48,19 +48,35 @@ Key idea: encode what guests pay for in short-term rentals:
 
 ---
 
+## Example Inputs for Hosts
+
+- 'neighbourhood': 'Vadhana'
+- 'property_type': 'Entire rental unit'
+- 'room_type': 'Entire home/apt'
+- 'accommodates': 4
+- 'bedrooms': 2.0
+- 'beds': 2.0
+- 'bathrooms': 2.0
+- 'review_scores_rating': 4.9
+- 'host_is_superhost': 1
+- 'latitude': 13.7309
+- 'longitude': 100.5815
+- 'amenities_count': 25
+- 'number_of_reviews': 50
+
+---
+
 ## Evaluation
 We report:
 1) **Prediction accuracy**
 - RMSE
 - MAPE
 
-2) **Business impact**
-- **Expected Total Revenue** (simulate revenue under recommended prices)
+2) **Recommended Price**
 
 Baselines:
 - Status quo (host’s current pricing)
 - Neighborhood range price (market typical range)
-- Host realized revenue (revenue under host-set prices with real booked days)
 
 ---
 
@@ -71,7 +87,7 @@ To avoid unrealistic recommendations:
 - Remove “zombie” listings to ensure recommendations are realistically bookable
 
 ![Alt text for the image](images/Result.png)
-![Alt text for the image](images/Similar Listing.png)
+![Alt text for the image](images/Similar_listing.png)
 
 ---
 
